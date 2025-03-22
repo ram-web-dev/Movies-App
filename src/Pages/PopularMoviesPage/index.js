@@ -47,7 +47,10 @@ class PopularMoviesPage extends Component {
     const data = await response.json()
 
     if (response.ok) {
-      this.setState({data: data.results, apiStatus: apiStatusConstants.success})
+      this.setState({
+        popularMovies: data.results,
+        apiStatus: apiStatusConstants.success,
+      })
     } else {
       this.setState({
         apiStatus: apiStatusConstants.failure,
