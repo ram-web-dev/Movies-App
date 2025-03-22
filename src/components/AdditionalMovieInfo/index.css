@@ -1,0 +1,25 @@
+.info-title {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.info-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.info-item {
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (min-width: 500px) {
+  .info-title {
+    font-size: 18px;
+  }
+  .info-item {
+    font-size: 16px;
+  }
+}

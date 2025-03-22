@@ -1,0 +1,96 @@
+.slider-section {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 576px) {
+  .slider-container {
+    width: 80%;
+    max-width: 1109px;
+  }
+}
+
+.slide-img {
+  padding: 0 10px;
+  border-radius: 4px;
+  height: 170px;
+  width: 254px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .slide-img {
+    height: 64px;
+  }
+}
+
+.slick-arrow::before {
+  display: none;
+}
+
+.slick-arrow::after {
+  display: none;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  background-color: #0d0d0d;
+  height: 170px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 576px) {
+  .loader {
+    width: 80%;
+    max-width: 1109px;
+  }
+}
+
+.failure-container {
+  display: flex;
+  justify-content: center;
+}
+
+.failure {
+  background-color: #0d0d0d;
+  height: 170px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  .failure {
+    width: 80%;
+    max-width: 1109px;
+  }
+}
+
+.failure-text {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.try-again-btn {
+  background-color: #fff;
+  padding: 4px 16px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+}

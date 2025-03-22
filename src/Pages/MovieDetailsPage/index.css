@@ -1,0 +1,93 @@
+.movie-details-bg-contianer {
+  display: flex;
+  flex-direction: column;
+  background-color: #131313;
+  min-height: 100vh;
+}
+
+.movie-poster-container {
+  width: 100%;
+  background-size: cover;
+  background-image: linear-gradient(
+    to right rgba(24, 24, 24, 1),
+    rgba(24, 24, 24, 0.6),
+    rgba(24, 24, 24, 0)
+  );
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: white;
+}
+
+.fill-rest {
+  flex-grow: 1;
+}
+
+.movie-details-section-container {
+  margin: 32px;
+  margin-top: 0px;
+  max-width: 1440px;
+}
+
+@media (min-width: 1440px) {
+  .movie-details-bg-container {
+    margin-inline: auto;
+  }
+}
+
+.movie-title {
+  font-size: 32px;
+  margin-top: 10vh;
+  margin-bottom: 8px;
+}
+
+.movie-info-container {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: baseline;
+}
+
+.movie-runtime {
+  margin: 0;
+}
+
+.movie-certificate {
+  margin: 0;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 2px 12px;
+}
+
+.movie-release-date {
+  margin: 0;
+}
+
+.movie-overview {
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.bottom-overlay {
+  height: 17vh;
+  background-image: linear-gradient(
+    to top,
+    rgba(19, 19, 19, 1),
+    rgba(19, 19, 19, 1),
+    rgba(19, 19, 19, 1),
+    rgba(24, 24, 24, 0.55),
+    rgba(0, 0, 0, 0)
+  );
+  width: 100vw;
+  position: relative;
+  left: 0;
+  top: -10vh;
+}
+
+.additional-info-section {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}

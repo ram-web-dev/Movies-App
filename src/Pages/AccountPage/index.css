@@ -1,0 +1,99 @@
+.account-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #131313;
+}
+
+.account-section-container {
+  background-color: #fff;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.account-section {
+  margin: 0 32px;
+  height: 100%;
+  max-width: 1440px;
+  flex-grow: 1;
+}
+
+.account-heading {
+  color: #131313;
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+hr {
+  background-color: #cbd5e1;
+  height: 2px;
+  border: none;
+}
+
+.account-info {
+  display: flex;
+  gap: 11px;
+  align-items: baseline;
+}
+
+.account-info-heading {
+  color: #94a3b8;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.account-mail {
+  color: #1e293b;
+  margin-bottom: 0;
+}
+
+.account-password {
+  margin-top: 12px;
+  color: #64748b;
+}
+
+.account-subscription {
+  color: #1e293b;
+  margin-bottom: 0;
+}
+
+.subscription-badge {
+  border: 1px solid #1e293b;
+  border-radius: 2px;
+  padding: 2px 4px;
+}
+
+.logout-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 42px 0px;
+}
+
+.logout-btn {
+  background-color: #e50914;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  line-height: 24px;
+}
+
+@media (min-width: 425px) {
+  .account-info {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .account-info p {
+    font-size: 24px;
+  }
+  .account-heading {
+    font-size: 36px;
+  }
+  .logout-btn {
+    font-size: 16px;
+  }
+}

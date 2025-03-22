@@ -1,0 +1,15 @@
+.movies-failure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.failure-img {
+  width: 232px;
+  height: 172px;
+}
+
+.movies-failure-text {
+  color: #fff;
+  line-height: 24px;
+}

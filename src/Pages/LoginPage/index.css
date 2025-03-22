@@ -1,0 +1,98 @@
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(12, 11, 16, 0.8);
+  padding: 64px 48px;
+  border-radius: 8px;
+  max-width: 456px;
+}
+
+.login-form-container h2 {
+  font-size: 32px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  line-height: 40px;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.login-input-container label {
+  color: white;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.login-input-container input {
+  background-color: #333333;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.login-form p {
+  color: #dc2626;
+  margin-top: 4px;
+  font-size: 14px;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.login-form button {
+  margin-top: 24px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.login-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('https://res.cloudinary.com/dgojdrj3n/image/upload/f_auto,q_auto/v1/mini-project-netflix/login-bg');
+
+  background-size: cover;
+}
+
+.login-page-container main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .login-page-container {
+    background-image: none;
+    background-color: #000000;
+  }
+
+  .login-page-container main {
+    flex-grow: 0;
+    margin-top: 48px;
+  }
+}
